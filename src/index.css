@@ -3,7 +3,7 @@
 
 body {
   margin: 0;
-  font-family: future-pt Futura PT W02 Book,Futura,Trebuchet MS,Arial,sans-serif;
+  font-family: BentonSans, sans-serif,Trebuchet MS,Arial;
   width: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -17,12 +17,10 @@ code {
 
 @font-face {
   font-display: block;
-  font-family: wknd-icon-font;
+  font-family: BentonSans;
   font-style: normal;
   font-weight: 400;
-  src: url(./media/fonts/wknd-icon-font.ttf) format("truetype"), 
-    url(./media/fonts/wknd-icon-font.woff) format("woff"), 
-    url(./media/fonts/wknd-icon-font.svg#wknd-icon-font) format("svg")
+  src: url(./media/fonts/bentonsansregular.otf) format("opentype")
 }
 
 [class$=-icon],
@@ -159,17 +157,18 @@ div[role=status] {
 }
 
 :root {
-  --main-accent-color:#ffc719;
+  --main-accent-color:#F7F7F8; 
   --highlight-background-color: red;
   --main-text-color: rgba(41,41,41);
   --main-color:#fff;
   --main-color-opacity:rgba(4,25,45,.55);
-  --main-color-opacity-lighter:rgba(4,25,45,.45);
+  --main-color-opacity-lighter:#fff; 
   --main-color-opacity-darker:rgba(4,25,45,.95);
-  --main-light-background: #EBEBEB;
-  --font-family: "wknd-icon-font" !important;
+  --main-light-background: #F9E2E7;
+  --font-family: BentonSans !important;
   --main-nav-link-color: #fff;
   --main-nav-color: red;
-  --dark-nav: rgba(41,41,41);
+  --dark-nav:#221D1D;
   --light-nav: #fff;
+  --header-height:262px;
 }

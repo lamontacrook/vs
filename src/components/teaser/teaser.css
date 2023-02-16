@@ -1,7 +1,7 @@
 .hero {
   position: sticky;
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,8 +19,8 @@ header .hero>.container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  position: fixed;
-  top: 0;
+  /* position: fixed;
+  top: 0; */
   z-index: -999;
 }
 
@@ -35,8 +35,12 @@ header .hero {
 
 .hero .content-block h1,
 .hero .content-block h2 {
-  color: #fff;
-  text-shadow: 1px 1px #333;
+  /* color: #fff;
+  text-shadow: 1px 1px #333; */
+}
+
+.hero .content-block p {
+  text-align: center;
 }
 
 .hero video, .hero img {
@@ -44,9 +48,9 @@ header .hero {
   height: 100%;
   object-fit: cover;
   overflow: hidden;
-  position: absolute;
+  /* position: absolute;
   left: 0;
-  top: 0;
+  top: 0; */
 }
 
 .hero::before {
@@ -67,6 +71,8 @@ header .hero {
   background-color: #ffc719;
   transition: width .4s ease-in-out;
   margin: auto;
+
+  display: none;
 }
 
 .hero-content {
@@ -87,6 +93,8 @@ header .hero {
   margin: auto;
   justify-content: space-around;
   opacity: 1;
+
+  background-color: #F2F2F2;
 }
 
 .teaser.featured>.container>picture>img, .teaser.featured>.container>video {
@@ -96,8 +104,9 @@ header .hero {
 }
 
 .teaser.featured>.container>.content-block {
-  max-width: 500px;
+  max-width: 660px;
   padding: 0 22px 22px;
+  min-width: 480px
 }
 
 .teaser.featured>.container>.content-block p {
@@ -109,8 +118,8 @@ header .hero {
 
 @media only screen and (min-width: 1000px) {
   .teaser.featured>.container>picture>img {
-    width: 660px;
-    box-shadow: 20px 20px var(--main-accent-color);
+    /* width: 660px;
+    box-shadow: 20px 20px var(--main-accent-color); */
   }
 
   .teaser.featured>.container>video {
@@ -119,9 +128,9 @@ header .hero {
   }
 
   .teaser.featured>.container {
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: center;
-    padding: 7% 5%;
+    /* padding: 7% 5%; */
   }
 
   .teaser.featured {

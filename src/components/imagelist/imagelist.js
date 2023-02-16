@@ -78,9 +78,16 @@ const ImageList = ({ content, config, context }) => {
 
               if (html) {
                 let body = new DOMParser().parseFromString(html, 'text/html');
-                let title = body.querySelector('h1');
+                let title = body.querySelector('h2');
                 let name = body.querySelector('h3');
                 let profession = body.querySelector('h5');
+                let price = body.querySelector('#price>p');
+
+                if(price) 
+                  price = price.innerHTML.split('&nbsp;');
+
+                console.log(price);
+                
 
                 let image = body.querySelector('.cmp-image');
                 if (image && image.innerHTML)
@@ -88,7 +95,7 @@ const ImageList = ({ content, config, context }) => {
 
                 setItems((item) => {
                   MagazineStore(LinkManager(_path, config, context), { path: _path, article: html });
-                  return [...item, { kind: __typename, style: content.style, name: name && name.innerHTML, profession: profession && profession.innerHTML, title: title && title.innerHTML, image: image, path: _path, type: 'xf' }];
+                  return [...item, { kind: __typename, style: content.style, name: name && name.innerHTML, price: price && price, profession: profession && profession.innerHTML, title: title && title.innerHTML, image: image, path: _path, type: 'xf' }];
                 });
 
               }
@@ -181,7 +188,9 @@ const Card = ({ item, config, context }) => {
       <picture dangerouslySetInnerHTML={{ __html: item.image }} />
 
       <Link key={item.path} to={LinkManager(item.path, config, context)}>
-        <span className='title'>{item.title || item.name}</span>
+        <span className='title'>{item.title || item.name} <br />
+          {item.price && (<React.Fragment><s>{item.price[0]}</s> {item.price[1]}</React.Fragment>)}
+        </span>
         {item.style === 'image-grid' && (
           <div className='details'>
             <ul>

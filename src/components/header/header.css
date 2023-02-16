@@ -16,8 +16,82 @@ header {
 }
 
 header.home-article img {
-  max-height: 400px;
+  /* max-height: 400px; */
   width: 100%;
   object-fit: cover;
   overflow: hidden;
+}
+
+header .top-content {
+  min-height: 41px;
+  display: flex;
+  flex-direction: row;
+}
+
+header .top-content button {
+  justify-content: left;
+}
+
+header .site-name {
+  width: 296px;
+  margin: auto;
+  padding: 60px;
+}
+
+header .fixed-scroll {
+  position: sticky;
+  background-color: var(--main-light-background);
+}
+
+header .header-promo {
+  text-align: center;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 600px;
+}
+
+header .message-box {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 0;
+}
+
+header .header-promo p {
+  text-rendering: optimizelegibility;
+  white-space: normal;
+  text-transform: uppercase;
+  font-family: var(--font-family);
+  font-size: 0.69rem;
+  letter-spacing: 0.08em;
+  font-weight: 100;
+  line-height: 6px;
+}
+
+header .header-promo>button {
+  background: transparent;
+  border: 1px solid black;
+  margin: auto 5px;
+  padding: 0 9px;
+  height: 33px;
+}
+
+header .brand-nav {
+  background-color: var(--main-accent-color);
+}
+
+header .brand-nav > div {
+  width: 280px;
+  display: flex;
+  flex-direction: row;
+}
+
+header .brand-nav > div img {
+  width: 57px;
+  padding: 10px 20px;
+  border-right: var(--main-color-opacity);
+}
+
+header .brand-nav > div img:nth-child(2) {
+  width: 37px;
+  padding: 10px 20px;
 }

@@ -113,8 +113,8 @@ image-grid>.list .list-item::after {
 }
 
 .slider-list .list-item .title {
-  background-color: rgba(0, 0, 0, .45);
-  color: #fff;
+  /* background-color: rgba(0, 0, 0, .45); */
+  /* color: #fff; */
   padding: 7px;
   border-radius: 6px;
   position: absolute;
@@ -122,6 +122,10 @@ image-grid>.list .list-item::after {
   left: 48%;
   transform: translateX(-50%);
   bottom: 35px;
+
+  color: #000;
+  font-size: smaller;
+  background-color: white;
 }
 
 .slider-list.list-container>h4,

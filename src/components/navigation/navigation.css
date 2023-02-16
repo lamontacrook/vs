@@ -1,7 +1,7 @@
 header nav {
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
-  background: var(--main-color-opacity);
+  background: var(--main-color);
   z-index: 90;
   transition: all .3s;
   border-bottom: 1px solid hsla(0,0%,100%,.2);
@@ -23,6 +23,7 @@ header nav .nav-brand {
   font-size: 22px;
   font-weight: 700;
   line-height: 1em;
+  display: none;
 }
 
 header nav .nav-brand p {
@@ -104,7 +105,7 @@ header nav .nav-sections {
   flex-direction: column;
   display: none;
   background-color: var(--overlay-color);
-  flex: 1 1 auto;
+  /* flex: 1 1 auto; */
   margin: auto;
 }
 
@@ -131,7 +132,7 @@ header nav[aria-expanded='true'] .nav-sections {
 /* tools */
 header nav .nav-tools {
   grid-area: tools;
-  flex: 0 0 auto;
+  /* flex: 0 0 auto; */
   margin: auto;
   display: none;
 }
@@ -159,7 +160,7 @@ header .nav-sections a.navItem {
   line-height: 3.125rem;
   text-transform: none;
   white-space: nowrap;
-  font-family: Futura PT W02 Book,Futura,Trebuchet MS,Arial,sans-serif;
+  font-family: BentonSans,Trebuchet MS,Arial,sans-serif;
   display: block;
   position: relative;
   padding: 0.2em 0;
@@ -172,6 +173,10 @@ header .nav-sections a.navItem.dark-nav {
 
 header .nav-sections a.navItem.light-nav {
   color: var(--light-nav);
+
+  font-size: .8rem;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 header nav .nav-sections li {
@@ -225,7 +230,6 @@ button.button {
   header nav {
     display: flex;
     justify-content: space-between;
-    height: var(--nav-height);
     padding: 16px 2rem;
   }
 
@@ -253,7 +257,10 @@ button.button {
 
   header nav .nav-sections {
     display: unset;
-    flex: 0 0 auto;
+    /* flex: 0 0 auto;
+    margin-left: 350px; */
+    padding-bottom: 18px;
+    /* border-bottom: 1px solid var(--dark-nav); */
   }
 
   header nav .nav-brand {
@@ -340,6 +347,8 @@ button.button {
     color: var(--main-text-color);
     font-size: 1.125rem;
     line-height: 1.125rem;
+    font-size: 12px;
+    text-transform: uppercase;
   }
 
   header nav .nav-sections a.navItem::after {

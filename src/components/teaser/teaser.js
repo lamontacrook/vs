@@ -16,8 +16,6 @@ const Teaser = ({ content, config, context }) => {
   
   return (
     <React.Fragment>
-
-
       <section className={'teaser ' + content.style} data-model={content.title} data-fragment={content._path}>
 
         <div className='container'>
@@ -47,11 +45,11 @@ const Teaser = ({ content, config, context }) => {
             )}
 
 
-            {content.description && content.style === 'featured' && (
+            {content.description && (
               <p>{content.description.plaintext}</p>
             )}
 
-            {content.callToAction && content.callToActionLink && content.style === 'featured' && (
+            {content.callToAction && content.callToActionLink && (
               <Link to={LinkManager(content.callToActionLink._path, config, context)} className='button'>{content.callToAction}</Link>
             )}
           </div>

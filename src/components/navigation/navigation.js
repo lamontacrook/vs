@@ -37,7 +37,14 @@ const Navigation = ({ className, config, screen, context }) => {
     pos2: { name: '', path: '#' },
     pos3: { name: '', path: '#' },
     pos4: { name: '', path: '#' },
-    pos5: { name: 'Settings', path: '/settings' },
+    pos5: { name: 'Swim', path: '#' },
+    pos6: { name: 'Sport & Lounge', path: '#' },
+    pos7: { name: 'Beauty', path: '#' },
+    pos8: { name: 'Accessories', path: '#' },
+    pos9: { name: 'V-Day', path: '#' },
+    pos10: { name: 'Sale', path: '#' },
+    pos11: { name: 'VSNow', path: '#' },
+    pos12: { name: 'Settings', path: '/settings' },
   };
 
   useEffect(() => {
@@ -74,6 +81,8 @@ const Navigation = ({ className, config, screen, context }) => {
     return false;
   }
 
+  window.viewGQL = {viewGQL};
+
   let prevScrollPos = window.pageYOffset;
   window.onscroll = function () {
     let currentScrollPos = window.pageYOffset;
@@ -102,16 +111,14 @@ const Navigation = ({ className, config, screen, context }) => {
         </div>
         <div className='nav-sections'>
           <ul>
-            <li><Link to={obj.pos1.path} className={`navItem ${className}`}>{obj.pos1.name}</Link></li>
-            <li><Link to={obj.pos2.path} className={`navItem ${className}`}>{obj.pos2.name}</Link></li>
-            <li><Link to={obj.pos3.path} className={`navItem ${className}`}>{obj.pos3.name}</Link></li>
-            <li><Link to={obj.pos4.path} className={`navItem ${className}`}>{obj.pos4.name}</Link></li>
-            <li><Link to={obj.pos5.path} className={`navItem ${className}`}>{obj.pos5.name}</Link></li>
+            {Object.keys(obj).map((key) => ( 
+              <li key={key}><Link to={obj[key].path} className={`navItem ${className}`}>{obj[key].name}</Link></li>
+            ))}
           </ul>
         </div>
-        <div className='nav-tools'>
+        {/* <div className='nav-tools'>
           <button href='#' className='button view-gql' aria-expanded='false' aria-controls='flyout' onClick={viewGQL}>View GraphQL</button>
-        </div>
+        </div> */}
       </nav >
       <Flyout show={false} config={config} screen={screen} context={context} />
     </React.Fragment>
