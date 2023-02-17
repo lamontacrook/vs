@@ -121,11 +121,13 @@ image-grid>.list .list-item::after {
   z-index: 1;
   left: 48%;
   transform: translateX(-50%);
-  bottom: 35px;
+  bottom: 0;
 
   color: #000;
   font-size: smaller;
   background-color: white;
+  width: 100%;
+  text-align: center;
 }
 
 .slider-list.list-container>h4,

@@ -57,8 +57,12 @@ const Header = ({ data, config, className, context }) => {
         <div className='top-content brand-nav'>
           <div>
             <a href='#' className='navItem'><img src={vsBrand} /></a>
-            <img src={pinkBrand}/>
+            <img src={pinkBrand} />
             <img src={beautyBrand} />
+
+          </div>
+          <div>
+            <a href="javascript:viewGQL.viewGQL()" className='button'>View GraphQL</a>
           </div>
         </div>
       </div>

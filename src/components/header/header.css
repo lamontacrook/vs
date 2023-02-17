@@ -95,3 +95,25 @@ header .brand-nav > div img:nth-child(2) {
   width: 37px;
   padding: 10px 20px;
 }
+
+header a.button {
+  background-color: transparent;
+  color:black;
+  border: .7px solid black;
+  border-radius: 5px;
+  font-size: small;
+}
+
+
+header .fly-out-gql a.button {
+  background-color: transparent;
+  color:white;
+  border: .7px solid white;
+  border-radius: 5px;
+  font-size: small;
+}
+
+header .top-content.brand-nav > div:nth-child(2) {
+  width: 100%;
+  justify-content: end;
+}
