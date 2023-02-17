@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/vs/static/css/main.0a841244.css",
-    "main.js": "/vs/static/js/main.1a666353.js",
+    "main.css": "/vs/static/css/main.1bbb0056.css",
+    "main.js": "/vs/static/js/main.2e47c580.js",
     "static/js/787.182dcdc1.chunk.js": "/vs/static/js/787.182dcdc1.chunk.js",
     "static/media/AdobeStock_109806363.jpeg": "/vs/static/media/AdobeStock_109806363.3e2094c128e6d6f29826.jpeg",
     "static/media/bentonsansregular.otf": "/vs/static/media/bentonsansregular.b1b37ac2740af1eb896e.otf",
@@ -15,12 +15,12 @@
     "static/media/proxymd.md": "/vs/static/media/proxymd.2fcc765fef3f69a688db.md",
     "static/media/endpoint.md": "/vs/static/media/endpoint.d6e0bc8289989dc1971e.md",
     "static/media/project.md": "/vs/static/media/project.18bb4839aa20c9830c4a.md",
-    "main.0a841244.css.map": "/vs/static/css/main.0a841244.css.map",
-    "main.1a666353.js.map": "/vs/static/js/main.1a666353.js.map",
+    "main.1bbb0056.css.map": "/vs/static/css/main.1bbb0056.css.map",
+    "main.2e47c580.js.map": "/vs/static/js/main.2e47c580.js.map",
     "787.182dcdc1.chunk.js.map": "/vs/static/js/787.182dcdc1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0a841244.css",
-    "static/js/main.1a666353.js"
+    "static/css/main.1bbb0056.css",
+    "static/js/main.2e47c580.js"
   ]
 }
